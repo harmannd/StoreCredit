@@ -12,9 +12,9 @@ public class CreditCase
 {
     private static int credit;
     private static int numItems;
-    private static List<Integer> items;
+    private static int[] items;
     
-    public CreditCase( int cred, int num, List<Integer> itms )
+    public CreditCase( int cred, int num, int[] itms )
     {
         credit = cred;
         numItems = num;
@@ -31,7 +31,7 @@ public class CreditCase
         return numItems; 
     }
            
-    public List<Integer> getItems()
+    public int[] getItems()
     {
         return items;
     }

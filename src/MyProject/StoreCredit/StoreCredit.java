@@ -8,12 +8,10 @@ import java.io.IOException;
  */
 public class StoreCredit 
 {
-
     public static void main(String[] args) throws IOException
     {
         ProcessCredit pc = new ProcessCredit();
-        pc.intialize();
-
+        CreditCase[] cc = pc.intialize();
+        pc.process(cc);
     }
-    
 }
