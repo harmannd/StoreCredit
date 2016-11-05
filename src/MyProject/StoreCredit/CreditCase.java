@@ -13,12 +13,14 @@ public class CreditCase
     private static int credit;
     private static int numItems;
     private static int[] items;
+    private static int caseNum;
     
-    public CreditCase( int cred, int num, int[] itms )
+    public CreditCase( int cred, int num, int[] itms, int caseNo)
     {
         credit = cred;
         numItems = num;
         items = itms;
+        caseNum = caseNo;
     }
     
     public int getCredit()
@@ -34,5 +36,10 @@ public class CreditCase
     public int[] getItems()
     {
         return items;
+    }
+    
+    public int getCaseNum()
+    {
+        return caseNum;
     }
 }
